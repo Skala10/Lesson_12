@@ -1,0 +1,94 @@
+[class*="__container"]{
+	margin: 0 auto;
+	width: 1400px;
+}
+
+.wrapper {
+	min-height: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.main {
+}
+.main__container {
+	padding: 30px;
+}
+.main__content {
+}
+.content-image {
+	background: url('../img/land.jpg') 0 0 / cover no-repeat;
+	position: relative;
+	width: 100%;
+	height: 800px;
+}       
+
+.content-image img{
+	max-width: 100%;
+}
+.content-image__knight {
+	position: absolute;
+	top: 572px;
+	right: 100px;
+	width: 150px;
+}
+
+.content-image__knight:hover{
+	transform: translate(-700px, 0px);
+	transition: all 0.8s ease;
+}
+
+.content-image__archer {
+	position: absolute;
+	top: 470px;
+	right: 70px;
+	width: 90px;
+}
+
+.content-image__archer:hover{
+	transform: skew(10deg,10deg);
+}
+
+.content-image__militia {
+	position: absolute;
+	top: 470px;
+	right: 390px;
+	width: 60px;
+}
+
+.content-image__militia:hover{
+	transform: scale(1.3);
+}
+
+.content-image__castle {
+	position: absolute;
+    top: 175px;
+    left: 0px;
+    width: 450px;
+}
+
+.content-image__castle:hover::before{
+	content: '';
+	background: url('../img/fire.webp') 0 0 no-repeat;
+width: 500px;
+height: 500px;
+position: absolute;
+top: 17px;
+left: 93px;
+z-index: 4;
+background-size: 250px;
+}
+
+
+.content-image__sun{
+	position: absolute;
+    top: 50px;
+    right: 100px;
+    width: 200px;
+}
+
+.content-image__sun:hover{
+	transform: rotate(180deg);
+	transition: all 1s ease;
+}
+
+
